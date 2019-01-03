@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{17FE56E5-749C-4133-92C0-D9DA11B582FC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WindowsFormsApplication1</RootNamespace>
+    <AssemblyName>WindowsFormsApplication1</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThreadForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThreadForm.Designer.cs">
+      <DependentUpon>ThreadForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PropertyForm.Designer.cs">
+      <DependentUpon>PropertyForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FormBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\FormBase.Designer.cs">
+      <DependentUpon>FormBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManyForms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManyForms.Designer.cs">
+      <DependentUpon>ManyForms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyEvent.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TaskDemo.cs" />
+    <Compile Include="UI\BackHomeForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\BackHomeForm.Designer.cs">
+      <DependentUpon>BackHomeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\GCodeEditForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\GCodeEditForm.Designer.cs">
+      <DependentUpon>GCodeEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\IOSignalForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\IOSignalForm.Designer.cs">
+      <DependentUpon>IOSignalForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\MontionControlForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\MontionControlForm.Designer.cs">
+      <DependentUpon>MontionControlForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ParamSetForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ParamSetForm.Designer.cs">
+      <DependentUpon>ParamSetForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SingleMoveForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\SingleMoveForm.Designer.cs">
+      <DependentUpon>SingleMoveForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThreadForm.resx">
+      <DependentUpon>ThreadForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManyForms.resx">
+      <DependentUpon>ManyForms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="PropertyForm.resx">
+      <DependentUpon>PropertyForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\BackHomeForm.resx">
+      <DependentUpon>BackHomeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\GCodeEditForm.resx">
+      <DependentUpon>GCodeEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\IOSignalForm.resx">
+      <DependentUpon>IOSignalForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\MontionControlForm.resx">
+      <DependentUpon>MontionControlForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ParamSetForm.resx">
+      <DependentUpon>ParamSetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SingleMoveForm.resx">
+      <DependentUpon>SingleMoveForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
