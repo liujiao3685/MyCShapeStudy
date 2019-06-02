@@ -82,10 +82,6 @@
       <Project>{8619B6B1-6808-4ACD-9DA7-B55C1C7A78A6}</Project>
       <Name>GDIPaint</Name>
     </ProjectReference>
-    <ProjectReference Include="D:\2345Downloads\HappyBirthDay2008\玫瑰花软件\玫瑰花软件\HappyBirthDay.csproj">
-      <Project>{c8290073-05bf-4436-876f-21e2bb3c5218}</Project>
-      <Name>HappyBirthDay</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

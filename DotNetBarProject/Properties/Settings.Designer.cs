@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MVCProject.Properties
+namespace DotNetBarProject.Properties
 {
 
 

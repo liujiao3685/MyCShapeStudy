@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace SmallProgram.Properties
+namespace 算法.Properties
 {
 
 

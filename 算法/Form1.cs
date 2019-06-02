@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace SmallProgram
+namespace 算法
 {
     public partial class Form1 : Form
     {
